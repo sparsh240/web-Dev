@@ -1,0 +1,73 @@
+-- Notes --
+
+# L1 - intro
+
+1. using ! and enter gives us boilerplate HTML code 
+2. we can link css files with <link rel="stylesheet" href="path/to/cssFile">
+3. we can link javascript with <script src="path/to/jsFile"></script>
+4. lang=en tells the browser that the language of the site is english , helps in parsing
+
+# L2 - intro2
+
+1. Tags - Describe the type of data
+2. Tags - Self closing , Paired
+3. Self Closing - <link> , <meta> (meta description describes the page) , <img>
+4. Paired - <html></html> , <head></head>
+5. tags have attributes that contain info about that specific instance of the tag
+
+# L3 - tags
+
+1. heading - <h1></h1> , <h2></h2> , <h3></h3> <h4></h4>
+             Large ------------------------------ Small
+             default display - block
+
+2. anchor - <a href=link/to/Page> Text content </a>
+            when we click the text content , it will open the link in href
+            default display - inline
+
+3. paragraph - <p> content of para </p>
+               small text , default display - block
+
+# L4 - more Tags 
+
+1. image - <img src="path/to/image" alt="text to be displayed when the server cant display the image">
+
+2. tables - <table>                     // Declaring table element
+                <caption>Table Info on Top</caption>
+          3.    <tr>                    // declaring table row , means all content will be part of the row
+          4.        <th>Column 1</th>   // declaring table headings , will be declared only once on top
+                    <th>Column 2</th>    ... 
+                </tr>
+                <tr>
+          5.        <td>Col 1 info</td>  // Declaring table data below table headings , this is the part of data of a row 
+                    <td>Col 2 info</td>   ...
+                </tr>
+            </table>
+    
+    - Attributes - rowspan , colspan 
+            colspan - How many columns [] [] [] will the td or th will take , eg- colspan="2"
+            colspan - How many rows [] 
+                                    []  will the td or th will take , eg- rowspan="2"
+            
+            values of rowspan and colspan can not be larger than the table itself in terms of numeric size
+-----------------------------------------------------------------------------------------------------------
+Not used a lot but can be targeted for css using the following tags
+6. <thead> Top data of the table</thead>
+7. <tbody>Internal data of the table </tbody>
+8. <tfoot> final data of the table</tfoot>
+-----------------------------------------------------------------------------------------------------------
+
+9. List - Ordereed , Unordered , Definition list -> displays data in a list
+Ordered list <ol> --- </ol> -> displays numbers too for each entry
+Unordered list <ul> --- </ul> -> Does not display number for each entry
+
+    List items - <ol> 
+                    <li>content 1</li>
+                    <li>content 2</li>
+                    <li>content 3</li>
+                 </ol>
+
+# L5 - SEOs , Core web vitals
+
+SEO - Search Engine Optimization - Content that loads faster 
+            
