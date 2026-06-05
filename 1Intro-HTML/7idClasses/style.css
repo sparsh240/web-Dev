@@ -1,0 +1,12 @@
+#first{
+    width:300px;
+}
+
+#second{
+    width:400px;
+    font-style: italic;
+}
+
+.back-red{
+    background-color: rgb(251, 183, 183);
+}

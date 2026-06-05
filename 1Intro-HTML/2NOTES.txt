@@ -1,0 +1,78 @@
+--- Notes ---
+
+# L6 - Inline and Block Elements (display property of css)
+
+Inline Elements - Do not start in a new line and only take the Width needed by them .
+Block Elements - Start from a new line and take up the complete width of their container by default , claiming all horizontal space to themselves , 
+                 pushing the ramaining content to new line .
+                
+                element{
+                    display:block(or inline);
+                }
+
+    check ./6inlineBlock/elements.txt for checking which are inline and which are block
+
+# L7 - id and classes
+
+id - id="unique-identifier" we interact with js or have unique css properties , ONLY ONE ELEMENT CAN HAVE AN id
+class - class="generic-name" , when we want multiple elements to have similar properties
+
+in css , class -> .class-name{} , id -> #id-name{}
+-----------------------------------------------------------------------------------------------------------------------
+id can be used in links too , if we use /path/to/a/website/#element-id , will directly take us to the element of any page
+in the web with that id
+------------------------------------------------------------------------------------------------------------------------
+
+# L8 - Audio , video and Media elements (svg)
+
+video element - <video src="/path/to/video/file" controls></video>
+        poster="path/to/thumbnail" will act like thumbnail for the video
+
+audio element - <audio src="/path/to/audio/file" controls></audio>
+        preload="none/metadata/auto" attribute - lets us deciade if and how the audio file is preloaded
+        auto - preloads as much as possible without delaying the other content loading , none - disables preloading 
+        specifically clicked on playback by user , metadata only preloads metadata of the audio file.
+    
+    common attributes - 
+        control attribute lets us play the video and lets us have more options 
+        autoplay attribute lets us autoplay the video as soon as site loads
+        loop attribute loops the media over and over.
+        muted attribute mutes the video
+
+svg element - Unlike raster image formats (like JPEG or PNG), which are made up of a grid of fixed pixels, 
+              SVG images use mathematical formulas to draw lines, shapes, and curves. 
+              Hence we can "draw" shapes that overlap as images in HTML using svg
+              <svg height=100px width=100px>
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+              </svg> 
+        cx , cy attributes tell about the distance of the center of circle from the left edge and top edge of the image
+        stroke and stroke-width attributes determines the data about the border of the circle 
+        fill attribute sets the color
+    
+    we can also store the data in .svg file with xmlns="http://www.w3.org/2000/svg" attribute 
+    <img src="file.svg">
+
+iframes - lets us embed other websites in our website
+          <iframe src="URL" width="300px" height="300px"></iframe>
+
+# L9 - Semantic Tags
+
+Using html semantic tags can greatly benifit the website SEO(search engine optimization) and managability of my code they offer a way to 
+structure our HTML in a meaningful manner , making website accessable and easier to understand (Visible in the image of 9th folder)
+
+# L10 - practice site - no css
+
+# L11 -HTML Entities
+When the text in an element that should be displayed on the page collides with HTML syntax and is recogonized as 
+an HTML tag , then we use Enitities to represent the text 
+for example - <p> will be recogonized as paragraph , hence we use &lt;p&gt; - lt means less than and gt means greater than
+Entities sre useful when we wish to display html elements in the page without the page recogonizing it as part of itself
+more such signs are used &copy; will give copyright symbol
+&nbsp; will represent a space
+
+pre tag - <pre> content </pre> Displays the content as is , including the spaces and newlines used in html codes too , but we still need to use Entities to recogonize <p> or other elements
+<canvas>--</canvas> used to draw graphical shapes in html (tho mainly worked with in js)
+
+The HTML <code> tag is a powerful element for displaying code snippets within a webpage. It preserves both spaces and line breaks, making it ideal for showcasing code
+=============================================================================================================================================================================================
+
