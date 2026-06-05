@@ -1,0 +1,16 @@
+-- intro -- CSS
+
+# L1 - intro
+
+CSS (Cascading Style Sheet)
+HTML - meant to create the skeletal structure of the site(skeleton) , CSS however is meant to visually define the website (muscle , skin , hairs)
+
+CSS can be added in 3 ways 
+1. <style> css content </style> - internal  css
+2. <div background-color="red"> </div> - inline css
+3. in any style (.css) file - external css (mainly used)
+element1 , element2 {
+    properties...
+}
+properties will be applied to element1 and element2
+
