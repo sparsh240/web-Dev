@@ -1,16 +1,64 @@
 -- intro -- CSS
 
-# L1 - intro
+# L1 , L2  - intro
 
-CSS (Cascading Style Sheet)
+CSS (Cascading Style Sheets)
 HTML - meant to create the skeletal structure of the site(skeleton) , CSS however is meant to visually define the website (muscle , skin , hairs)
 
 CSS can be added in 3 ways 
-1. <style> css content </style> - internal  css
-2. <div background-color="red"> </div> - inline css
+1. <style> body{background-color:red;} </style> - internal  css (placed in <head></head>)
+2. <div style="background-color:red; otherstyle=value"> </div> - inline css
 3. in any style (.css) file - external css (mainly used)
 element1 , element2 {
     properties...
 }
 properties will be applied to element1 and element2
 
+# L3 - Selectors
+
+div{
+    ... will modify all div instances inside the file
+}
+
+.class-name{
+    ... will modify only the elements with the given class name
+}
+
+#id-name{
+    ... will moduify only the element with the given ID
+}
+
+parent > child{
+    ... will modify the only child instances present in the parent tag eg- div > p{...} will modify p only in div
+}
+(ONLY WORKS ON DIRECT CHILD , NO multi level INHERITANCE)
+
+parent child{
+    ... will modify child instances that are present inside another elements in the parent element too , multi level inheritance just with imidiate child
+}
+
+*{
+    ... universal selector , modifies all elements
+}
+
+| --- Pseudo Selector --- |
+    a:visited{
+        ... link visited
+    }
+    a:link{
+        ... non visited
+    }
+    a:active{
+        ... when we click the element
+    }
+    a:hover{
+        when hovering
+    }
+    p:first-child{
+        ...wherever p is the first child of a parent , then only modify the p
+    }
+================ THESE WERE MAIN SELECTORS ==================================
+
+# L4 - Box Model - Padding , border , margin
+
+Any element in HTML has - content , padding , Border , Margin

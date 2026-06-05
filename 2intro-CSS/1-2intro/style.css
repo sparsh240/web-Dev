@@ -1,0 +1,24 @@
+#header{
+    background-color: antiquewhite;
+}
+
+#nav-bar{
+    background-color: rgb(200, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+button{
+    width:100px;
+    border-radius: 10% 50%;
+}
+#main-area{
+    background-color: bisque;
+}
+
+#content-heading{
+    background-color: rgb(40, 99, 99);
+}
+
+.content{
+    background-color: rgb(142, 123, 94);
+}
