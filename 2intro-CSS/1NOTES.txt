@@ -61,4 +61,57 @@ parent child{
 
 # L4 - Box Model - Padding , border , margin
 
-Any element in HTML has - content , padding , Border , Margin
+Any element in HTML has - content , padding , Border , Margin , every element is a box
+TOTAL height and width will be content + padding + border + margen (all of both sides) , NOT height , width but TOTAL
+width or height css properties Take The width of Content in Context , NOT the padding , hence the visual height and width also adds padding to it
+IMPORTANT - usually the width ONLY represents the content width HOWEVER
+            IF we want the width property to represent the size of content + padding + border , 
+            we use --- 
+            { 
+                height:200px;
+                box-sizing:border-box;
+            }
+
+Margin Collapse - concept states that IF the margin of two elements overlaps , then the larger margin as applied ONLY once.
+
+#L5 - Fonts , Text , Color Properties
+
+font-family: name1,name2,name3 ;
+
+    Fonts for the text can be changed using this 
+        we set multiple names as it is a good practice , so if the first font is not in browser , it looks at second and then third
+        usually in the end we add a browser-safe font that can be loaded on any computer.
+
+font-style:italic; 
+
+    We can change the styles of font from italic , oblique and normal 
+
+font-weight :  - is used to set the boldness of the text
+
+    text-decoration : can underline or overline a text
+    text-decoration-color : defines the color of the decorations we selected
+    text-decoration-style : changes the style of decoration (dotted/dashed/wavey)
+    text-decoration-thickness : changes chickness of decoration
+
+External Fonts - Google Fonts - we can import to our code or we can link , 2 possible ways 
+                 Import is done in css wheras linking is done in head section of html 
+                 Only one of the methods are needed to use the font in our page .
+
+Font Properties - font-size - determines the size of fonts
+                  line-height - determines the spacing between the lines
+                  letter-spacing - changes the spacing between charecters
+                  text-transform - changes the charecters to upper or lowercase
+
+TEXT OVERFLOW - when text takes more space than the container it is held by 
+                text-overflow:(ellipses/hidden/clip)
+                overflow:hidden;
+                word-break:break-all; breaks the word to fill in the container
+
+text-align:(center/left/right/...) - aligns the text inside the container
+
+-- COLORS --
+can be represented in - hex ,  rgb , rgba(red , green , blue , alpha) , colorcode , hsl(hue saturation lightness) , hsla(hsl,alpha)
+
+# L6 - Practice css
+
+=========================================================================================================================================== 

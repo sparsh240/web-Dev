@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding , Border , Margin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Removing default padding and margins</h1>
+    <br>
+    <h4>without (box-sizing: border-box) , height:50px means THAT the height of the content alone is 50px</h4>
+    <div class="c one">Same Content with height 50px</div>
+    <h4>with (box-sizing: border-box) , height:50px means that the height of Content + padding + border is 50px</h4>
+    <div class="c two">Same Content with height 50px</div>
+
+    <h4>Margin Collapse -</h4>
+    <div class="three">Hi , my margin is 50px from bottom </div>
+    <div class="four">Hi , my margin is 20px from top </div>
+    <h3>Yet the margin between the two elements will be the Greater of the 2 , ie- 50px as their margins overlap , larger one is implemented</h3>
+    
+</body>
+</html>

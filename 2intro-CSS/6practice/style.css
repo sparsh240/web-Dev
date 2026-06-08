@@ -1,0 +1,17 @@
+div{
+    background-color: rgb(143, 255, 255);
+    padding:10px;
+    margin:10px
+}
+
+/* Starts from here */
+
+div > p {
+    background-color:green ;
+    color:blue;
+}
+
+p:first-child{
+    background-color: yellow;
+    color:red;
+}

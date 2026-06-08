@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+VIC+Guides&display=swap');
+
+.one{
+    font-family: 'Courier New';
+    font-style: italic;
+    font-weight: bold;
+    text-align:center;
+}
+
+.two{
+    font-family: Verdana;
+    font-size:33px;
+    text-decoration: overline;
+    text-decoration-color: rgb(60, 166, 131);
+    text-decoration-style: dashed;
+    text-decoration-thickness: 6px;
+    text-align: right;
+}
+
+.three {
+  font-family: "Playwrite AU VIC Guides", cursive;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.four{
+    line-height :40px;
+}
+
+.fifth{
+    width:30px;
+    border:2px solid red;
+    /* text-overflow:hidden;
+    overflow:hidden */
+    word-break:break-all
+}

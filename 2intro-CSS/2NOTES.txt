@@ -1,0 +1,28 @@
+-- CSS NOTES 2 --
+
+# L-7 Specificity and Cascade
+When CSS conflicts occur , eg- same element has 2 classes and both style the element differently , css resolves them\
+with cascade algorithm
+
+- Posetion - in equally important styles , the one placed at last will be given precedance
+- Specificity - Precedance to how :|"specific" the selector are
+                inline style > ID selector > class / attributes selector > element selector > universal selector
+                  1000          100           10      10                     1                   0
+
+                attribute selector - <element some-name=some-value> --- </element>
+                then we can apply css to it by 
+                [some-name=some-value]{
+                    prpoerty;  
+                }
+- origin - styles provided by default , in effect when we dont give styles to the elements (user agent stylesheets)
+
+- importance - color: red !important; - will ovverride everything and be prioritized - 10,000
+when we use keywords like h1.class-name , the specificity will be the sum of the priorities , ie- 10+1= 11
+
+pseudo class has specificity 10
+
+Good CSS practice , do not tyy to confuse fellow programmers and modify the same element multiple times or override it , also avoid important as it is too specific
+====================================================================================================================================================================
+
+# L-8 - Units
+We can set sizes with various units
