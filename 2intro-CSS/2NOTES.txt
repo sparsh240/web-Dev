@@ -104,4 +104,7 @@ position:sticky; - will behave like fixed ONLY when the specfic condition is rea
                    used in nav bars
 
 NOTE - TRANSFORM , FILTER , PERSPECTIVE PROPERTIES CAN ALSO MAKE AN ELEMENT APPEAR POSITIONED (MEANS the element is positioned wrt parent even if parent is not positioned)
+
+# L-14 - Practice
+
 ======================================================================================================================================================================================================
