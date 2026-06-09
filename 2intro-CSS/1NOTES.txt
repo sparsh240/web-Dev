@@ -57,6 +57,9 @@ parent child{
     p:first-child{
         ...wherever p is the first child of a parent , then only modify the p
     }
+    p:nth-child(3){
+        ...applied to p when it is 3rd child of an element
+    }
 ================ THESE WERE MAIN SELECTORS ==================================
 
 # L4 - Box Model - Padding , border , margin

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicing Units</title>
+    <style>
+        html{
+            font: size 20px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .pixels{
+            height:50px;
+            width: 500px;
+            background-color: aquamarine;
+            margin: auto;
+        }
+        .viewport{
+            height:20vh;
+            width:60vw;
+            margin:auto;
+            background-color: rgb(74, 168, 137);
+        }
+
+        .em{
+            background-color: rgb(42, 127, 99);
+            margin:auto;
+            width:60%;
+            /* font-size: 20px; */
+            font-size: 2rem;
+        }  
+        
+        .em p{
+            width:60%;
+            background-color: rgb(10, 51, 37);
+            font-size:2em ;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="pixels">Well I am an element - set by pixels</h1>
+    <h1 class="viewport">Well I am an element - set by Viewport</h1>
+    <div class="em">Well I am a font size set by rem
+        <p>Am set by em </p>
+    </div>
+</body>
+</html>

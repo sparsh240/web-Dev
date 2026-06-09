@@ -25,4 +25,83 @@ Good CSS practice , do not tyy to confuse fellow programmers and modify the same
 ====================================================================================================================================================================
 
 # L-8 - Units
-We can set sizes with various units
+
+We can set sizes with various units -
+
+px - pixel , one pixel = 1/196 inch
+vw , vh - viewport width , viewport height - element is sized in terms of the width / height of the viewport
+auto - when we want both left and right / top and bottom  of the element to have equal padding or margen , we use auto
+em - works on inherited font sizes , if parent has 16px font size and the .parent child{} has 2em font size then 2x16 =32 will be new font size
+rem - <html> is the root element , whatever size is given to it , rem will allot the size of other elements based on that , just like em
+vmin , vmax - uses the min / max value from height or width as the current value .
+% - means the percentage of width/height of parent is given to the element
+
+# L-9 - Display property
+
+inline - Same Line with other elements  / can not modify width / if on top , not good with padding and margins either
+Block - takes whole line / width can be modeified / predictable with padding and margins
+inline-block - is inline but we can define width and padding + margins predictably
+none - removes the box and the space that it takes as well from the html page
+visibility:hidden - removes the box but keeps the space it took
+flex - mainly used to center or place elements in a defined place / Can treat the content inside as inline even if they are block
+inline-flex - flexbox but inline
+grid - Allows us to create grid
+
+# L-10 - Shadows and Outlines
+
+border- normal border , part of box model
+outline - outside border , Does not take space and is not the part of block model , also border comes just after padding , wheras we can set outline distance with outline-offset
+border-radius affects outline too
+shadow - works like a shadow 
+
+# L - 11 - Styling Lists
+
+Lists are used for building NAV bars 70-80% of the time
+lists hava a display:list-item; 
+every list item element is consists of 
+1. Marker 
+2. content
+
+we can change the marker by list-style-type:"value"; custom value
+list-style: is used for pre defined markers
+
+Marker is NOT styled when we style the li tags , but we can include marker as the part of list by
+list-style-posetion:inside; now background and other properties will be applied to it
+
+We can also use images instead of marker by list-style-image:url("");
+
+# L-12 CSS Overflow property
+
+When the content of the box takes more space horizontally or vertically than allotted to the box , 
+we use overflow property to deal with it by -
+1. Hiding the overflow. overflow:clip;
+2. Displaying ... at end. -> done with text-overflow:ellipses; or overflow:hidden;
+3. Adding scrollbars overflow:scroll;
+4. display scrollbar only when needed :auto;
+more
+
+white-space:nowrap; used when we want content in one line even if the height of container is large
+
+overflow-x , overflow-y -> we can modify overflow in x and y directions indevidually
+OR overflow : hidden scroll; hidden for x , scroll for y
+
+try using auto mostly...
+
+# L - 13 - CSS position property
+
+By default the position is static , behaves normally , recognizes other boxes and does not overlap , posetion is relative to other elements
+
+position:relative; - we can now use the top-bottom properties , z-index properties 
+                     top:px , bottom - Allows us to move the element with respect to its old position WITHOUT affecting other elements , top moves AWAY from the top  not towards
+                     z-index : 0 / any other number - 0 means (overlaps below other element , 1 means overlaps above other element)
+                     
+position:absolute; - will make the element iteratively ask the parent and parent to parent and so on , until it finds a posetioned element (non static) , then the current element
+                     will only behave relative to the Root element OR the element that is positioned .
+
+position:fixed; - WILL keep the position SAME even if we scroll the page , here it will not care for parent element being positioned or not , it just stays on the same place in sceen
+
+position:sticky; - will behave like fixed ONLY when the specfic condition is reached , eg- top:0, then will stick to its posetion as soon as it reaches top , before it , works normally
+                   used in nav bars
+
+NOTE - TRANSFORM , FILTER , PERSPECTIVE PROPERTIES CAN ALSO MAKE AN ELEMENT APPEAR POSITIONED (MEANS the element is positioned wrt parent even if parent is not positioned)
+======================================================================================================================================================================================================

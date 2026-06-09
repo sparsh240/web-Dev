@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadows And Outlines</title>
+    <style>
+        *{
+            margin:10px;
+        }
+        .box{
+            border:7px solid rgb(117, 221, 129);
+            box-shadow:-2px -5px  5px rgb(0,0,0); /*xshift yshift blur spread color*/
+            padding:30px;
+            text-align:center;
+        }
+        .box1{
+            border:7px solid rgb(74, 181, 87);
+            outline: 3px solid red;
+            outline-offset:10px;
+            padding:30px;
+            text-align:center;
+            border-radius:10px;
+            margin:20px;
+            
+        }
+        p{
+            text-shadow: 2px 3px 5px green;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">I have a border AND Shadow</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores aliquam dolores nam facilis qui quisquam enim officiis amet itaque ad? Nesciunt omnis magni, cum alias tenetur quasi minima nisi harum recusandae quisquam sint!</p>
+    <div class="box1">I have an outline and Border </div>
+    
+</body>
+</html>

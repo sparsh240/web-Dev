@@ -1,0 +1,44 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.box{
+    display: inline;
+    background-color: aquamarine;
+    padding:30px;
+    margin:30px
+}
+
+.box-inline{
+    background-color: green;
+    display:inline-block;
+    width:300px;
+    height:40px;
+    padding:30px;
+    margin:20px
+}
+
+.non-box{
+    display:block;
+    margin:30px;
+    background-color: red;
+}
+
+P{
+    /* display: none; */
+    visibility:hidden;
+}
+
+
+
+.sub-container{
+    display: flex;
+    justify-content: space-around;
+    margin:20px;
+    
+}
+
+h1{
+    background-color: rgb(13, 196, 113);
+border: 3px solid black;
+}
