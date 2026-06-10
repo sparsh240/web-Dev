@@ -1,0 +1,44 @@
+-- CSS Notes --
+
+# L7 - CSS Flexbox 
+
+with float and clear , aligning content was hectic and often buggy, CSS Flexbox makes it easier to align the content 
+display:flex lets us utilize the properties of flexbox and lets us manipulate the posetioning of the elements inside a container
+
+Display flex aligns the contents horizontally irrespective of them being block or inline elements.(by default)
+justify-content: lets us change the orientation of the content in direction of main axis (works on main axis)
+align-content: lets us change the orientation of the content in direction of cross axis (works on cross axis)
+
+(NOTE - THE ORIENTATIONS ARE ONLY IN EFFECT INSIDE THE CONTAINER , NOT ON THE CONTAINER ITSELF)
+
+The Items inside flex box are layed in the "flex-dircrion"  , by default left -> right (row) , but can be changed to top to bottom (column)
+the flex-direction:row; aligns items from left to right by default
+
+IMPORTANT - 
+main axis , is the direction in which the elements are alligned , if row then horizontal , if column then vertical
+cross axis is perpendicular to main axis , when we change the flex direction , theses axis also interchange
+main start , main end , cross start , cross end - > starting and ending points of main and cross axis .
+main size , cross size -> distance from main start to main end and cross start to cross end
+
+flex-wrap:wrap/wrap-reverse; -> if the content of the flex overflows , it will start a new row/column inside the flexbox that contains thee overflowing contents (wrap reverse starts from bottom instead of top)
+
+align-content: property used when we use wrap instead of align-items as it does not work with wraps as intended
+
+flex-flow: <flex direction> <flex wrap> ; - lets us define 2 properties at once , flex direction and flex wrap
+
+gap:30px; will add gap between the elements even without margin
+gap: 30px 40px; will change row-gap to 30px and column-gap to 40px
+
+item property - 
+order: 2; by default order value of each flexbox element is 0 , the greater the value , the more end the element will be placed in wrt other elements
+          order lets us place elements in specific order even if defined defferently in html 
+
+flex-grow : 1; if difined in a single class of multiple elements , all of them will together grow to cover the width of the container
+               if defined in one element inside container , flex-grow:2; means the element will have twice the size of other elements inside the containers
+               default value 0 , ie - will not fill container
+
+flex-shrink :2; is item property , will shrink the element twice the speed of normal element when needed (window size change nd all) 
+
+align-shelf: used to move a single element while keeping other elements as is .
+
+# L8 - CSS Grid

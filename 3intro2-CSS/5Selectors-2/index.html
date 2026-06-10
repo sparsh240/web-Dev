@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors </title>
+    <style>
+        .boxes{
+            background-color: rgb(42, 197, 21);
+            margin: 10px;
+        }
+
+        .box:first-child {
+            background-color: rgb(31, 126, 126);
+           
+            
+        }
+
+        .box::first-line{
+            background-color: rgb(127, 255, 131);
+            
+        }
+        [data-color="primary"]{
+            border:2px solid red;
+        }
+
+        p , div{
+            color:blue;
+            margin: 10px;
+            
+        }
+
+        .box:nth-child(even){
+            color:rgb(201, 56, 78);
+        }
+        p:nth-last-child(1){
+            background-color: rgb(239, 207, 165);
+        }
+
+        p::after{
+            content: " -- Inserted via CSS -- ";
+            color:red;
+        }
+        p::before{
+            content: " -- Inserted via CSS -- ";
+            color:rgb(0, 179, 255);
+        }
+
+        ::selection{
+            color:green;
+            background-color: antiquewhite;
+            
+        }
+        .box::first-letter{
+            background-color: rgb(170, 191, 184);
+            font-size: 40px;
+            color:gold;
+        }
+
+        input::placeholder{
+            color:purple;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div class="box">Am a box</div>
+        <div class="box">Am a box Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quas facere, ut labore
+            recusandae exercitationem reprehenderit earum quasi in cum ate ipsam unde harum
+            voluptatibus. Repellat, aliquid quis obcaecati consequatur consectetur facere natus nam nobis itaque
+            mollitia dolore dicta autem nisi tenetur voluptatum iure. Eveniet, deleniti!</div>
+        <div class="box">Am a box</div>
+        <div class="box">Am a box</div>
+        <div data-color="primary">Am a box</div>
+        <p>Hello am a paragraph</p>
+        <input type="text" placeholder="AM PLACEHOLDER">
+    </div>
+
+</body>
+
+</html>

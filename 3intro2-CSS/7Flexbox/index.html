@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .boxes {
+            display: flex;
+            border: 1px solid black;
+            height: 110px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            margin: 10px;
+            height: 30px;
+            background-color: rgb(253, 187, 187);
+            padding: 10px 20px;
+            border: 1px solid black;
+            
+        }
+
+        .boxes1 {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid black;
+            width: 400px;
+            height: 500px;
+            justify-content: end;
+            align-items: start;
+        }
+
+        .box1 {
+            margin: 10px;
+            height: 30px;
+            background-color: rgb(253, 187, 187);
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+
+        .boxes2 {
+            display: flex;
+            border: 1px solid black;
+            height: 210px;
+            justify-content: center;
+            align-content: flex-start;
+            flex-flow: row wrap-reverse;
+            /* row-gap: 10px;
+            column-gap: 20px; */
+            gap:20px 40px;
+
+        }
+
+        .box2 {
+
+            height: 30px;
+            background-color: rgb(253, 187, 187);
+            padding: 10px 20px;
+            border: 1px solid black;
+        }
+
+        .boxes3{
+            display: flex;
+            border: 1px solid black;
+            height: 110px;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        .box3 {
+            margin: 10px;
+            height: 30px;
+            background-color: rgb(253, 187, 187);
+            padding: 10px 20px;
+            border: 1px solid black;
+            flex-grow:1;
+        }
+
+        .o-2{
+            order:2;
+            align-self:flex-end;
+            background-color: rgb(204, 255, 204);
+        }
+        .o-1{
+            order:1;
+            flex-grow:2;
+            background-color: rgb(182, 182, 251);
+            
+            
+        }
+        .o-3{
+            order:3;
+            flex-shrink: 2;
+            background-color: rgb(255, 92, 92);
+        }
+        .o-4{
+            order:4;
+            align-self:flex-start;
+            background-color: rgb(204, 255, 204);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ROW</h1>
+    <div class="boxes">
+        <div class="box">Am Block 1</div>
+        <div class="box">Am Block 2</div>
+        <div class="box">Am Block 3</div>
+        <div class="box">Am Block 4</div>
+    </div>
+    <h1>COLUMN</h1>
+    <div class="boxes1">
+        <div class="box1">Am Block 1</div>
+        <div class="box1">Am Block 2</div>
+        <div class="box1">Am Block 3</div>
+        <div class="box1">Am Block 4</div>
+    </div>
+    <h1>FLEX WRAP</h1>
+    <div class="boxes2">
+        <div class="box2">Am Block 1</div>
+        <div class="box2">Am Block 2</div>
+        <div class="box2">Am Block 3</div>
+        <div class="box2">Am Block 4</div>
+        <div class="box2">Am Block 4</div>
+        <div class="box2">Am Block 4</div>
+        <div class="box2">Am Block 4</div>
+        <div class="box2">Am Block 4</div>
+        <div class="box2">Am Block 4</div>
+        <div class="box2">Am Block 4</div>
+        <div class="box2">Am Block 4</div>
+    </div>
+    <h1>Item Properties - order , flex-grow , flex-shrink , align-self</h1>
+    <div class="boxes3">
+
+        <div class="box3 o-2">Am Block 1 order 2 (self)</div>
+        <div class="box3 o-3">Am Block 2 order 3 (shrink)</div>
+        <div class="box3 o-4">Am Block 3 order 4(self)</div>
+        <div class="box3 o-1">Am Block 4 order 1 (grow)</div>
+    </div>
+</body>
+
+</html>

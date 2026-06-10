@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Clear in CSS</title>
+    <style>
+        body{
+            background-color: rgb(203, 250, 203);
+        }
+        .cards {
+            border: 2px solid red;
+            display: flow-root;
+            margin:20px;
+        }
+
+        .card {
+            border: 2px solid rgb(46, 63, 222);
+        }
+
+        .card1 {
+
+            height: 100px;
+            width: 150px;
+            float: left;
+            background-color: rgb(91, 204, 127);
+        }
+        p{
+            clear:left;
+            border:2px solid red;
+            margin:0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <div class="card1">Card 1 - overflows due to float:left</div>
+        <div class="card card2">Card 2</div>
+        <div class="card card3">Card 3</div>
+        container size increased by display:flow-root
+    </div>
+    <div class="cards">
+        <div class="card1"></div>
+        <div class="card card2">Card 2</div>
+        <div class="card card3">Card 3</div>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquid fuga omnis error, incidunt dignissimos,
+        possimus nihil cupiditate adipisci expedita fugiat explicabo. Blanditiis assumenda impedit necessitatibus ea,
+        quisquam vero adipisci suscipit dolores corporis quidem! Dolore saepe eos possimus debitis nisi exercitationem
+        tempora porro ratione fugiat squam dolorem quos possimus, molestiae quasi consectetur blanditiis
+        voluptas. Asperiores, praesentium illo quisquam assumenda iste quos consequuntur fugit eveniet ipsa possimus
+        nesciunt!
+
+    </div>
+    <div class="cards">
+        <div class="card1"></div>
+        <div class="card card2">Card 2</div>
+        <div class="card card3">Card 3</div>
+        <p>clear:left; made sure that left side of this element does not have the float element</p>
+
+    </div>
+
+</body>
+
+</html>

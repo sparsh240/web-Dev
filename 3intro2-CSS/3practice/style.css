@@ -10,6 +10,16 @@
     --box-bg: rgb(23, 142, 19);
     --nav-text-bg:rgb(240, 255, 248);
 }
+/* Another theme */
+
+/* :root{
+    --nav-bg:rgb(120, 26, 187);
+    --item-bg:rgb(169, 64, 210);
+    --body-bg:rgb(134, 76, 234);
+    --box-bg: rgb(93, 19, 142);
+    --nav-text-bg:rgb(252, 240, 255);
+} */
+
 body{
     background-color: var(--body-bg);
 }

@@ -1,0 +1,95 @@
+-- CSS NOTES --
+
+# L1 - CSS Variables
+We can create Reusable variables in CSS by declaring them in root scope
+
+:root{
+    --var_name: value;
+    --second_var_name: second_value;
+}
+
+element{
+    --var_name:overrodden_value // we ovveride the global variable here that can be used just locally
+    property: var(--var_name) , blue; // we use var function to access the variable , blue works as a fallback value when var not found
+}
+
+values can be colors , rgb values , pixel , other units , int , float values , urls , strings , whatever we wish
+can be used in changing themes of the websites as well
+
+# L2 - Media Queries
+
+Media Queries Make the website responsive , ie a website adaptss itself according to the size of the device it is viewed in
+the styles change as the device is changed
+syntax - 
+    @media only/not mediaType and (expression){
+        css code
+    }
+
+@media to let the css know abt the media query , only- show in the given Media / not - dont show the given Media  
+mediaType (screen/all/speech) based on what device we are seeing on. 
+and
+expression - a condition for the given mediatype eg- (max-width:455px; , min-width , orientation(landscape or portrait))
+
+Most of the cases will only require widths or orientations
+
+# L3 - Practice 
+
+# L4 - Float and Clear 
+
+Not used as frequently since the arrival of flexbox , but must know how it works
+
+float:left/right/both; - will make the element move to the left or right of the parent container , giving area for the other content in the container to wrap around it 
+IF the current content overflows from the parent container , we can use (display:flow-root) property to stop the overflow and the container size increases wrt the float element.
+
+clear:left/right/both; - will make sure that there is no floating element on left or right of the element , it will resize the container such that the current element can have its desired space
+without overriding or overflowing the float element.
+
+NOTE - DO NOT USE IT , THESE PROPERTIES ARE JUST FOR KNOWLEDGE OR WORKING WITH LEGACY SITES.
+
+# L5 - Selectors - Revisit
+
+.boxes{
+            ...modifes all elements with boxes class
+        }
+        .box:first-child {
+            ...modifies the box when it is first child of a parent element
+        }
+
+        .box::first-line{
+            ...modified the first line of the box element only , keeps it like that no matter the size of the viewport
+        }
+
+        .box::first-letter{
+            ...modifies only the first letter of the element .box
+        }
+        [custom-name=custom-value]{
+           ...when we create attribute ourself for a tag 
+        }
+
+        p , div{
+            ... modifies the grouped elements together
+        }
+
+        .box:nth-child(even){
+            ... modified when the box is the even child(even posistion) from top
+        }
+        p:nth-last-child(n){
+            ... modifies p where it is the nth last child from last of the parent
+        }
+
+        
+
+we can insert elements with CSS dynamically -> pseudo elements
+EElement::after{ } , EElement::before{ } 
+::selection{ 
+    ... will modify the selection of whole page , nothing before :: represents whole page.
+}
+
+input::placeholder{
+    ...modifies the placeholder inside the input - text
+}
+
+# L6 - Practice -
+
+=======================================================================================================================================================
+
