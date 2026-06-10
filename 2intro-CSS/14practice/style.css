@@ -14,8 +14,13 @@ body{
     margin:135px auto;
     border:1px solid rgb(211, 211, 211);
     border-radius:10px;
-    box-shadow:0px 0px 5px rgba(0,0,0,0.2)
+    box-shadow:0px 0px 5px rgba(0,0,0,0.2);
+    transition:0.2s;
 
+}
+
+.card:hover{
+    box-shadow:0px 0px 10px 5px rgba(0,0,0,0.2)
 }
 .image{
     height:44%;
@@ -37,7 +42,14 @@ body{
     border:1px solid rgb(199, 199, 199);
     padding:1px 5px;
     border-radius: 10px;
+    transition: 0.13s;
     
+}
+
+.tag:hover{
+    background-color: rgb(197, 206, 188);
+    color:rgb(242, 255, 222);
+    cursor: pointer;
 }
 
 h2{
@@ -62,6 +74,13 @@ h2{
     padding:10px 18px;
     border:none;
     border-radius:20px;
+    transition: 0.13s;
 
     
+}
+
+.readmr:hover{
+    background-color:rgb(101, 124, 58);
+    color: rgb(195, 216, 124);
+    box-shadow: 0px 0px 5px rgb(95, 111, 76);;
 }
