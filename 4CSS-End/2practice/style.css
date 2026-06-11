@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    
+}
+header{
+    margin-top:0px;
+    padding-bottom: 24px;
+    background-color: white;
+    position:sticky;
+    top:0;
+}
+
+nav{
+    width:89vw;
+    margin:20px auto;
+    height:59px;
+    position:sticky;
+    top:30px;
+    font-size: 14px;
+}
+.left{
+    width: 150px;
+    height:70px;
+    margin-right: 10vw;
+    margin-left: 15px;
+    position:relative;
+    top:7px;
+    
+}
+.middle{
+    
+    margin:auto 4vw;
+}
+
+.nav-content{
+    display:flex;
+    background-color: rgb(241, 240, 237);
+    border:1px solid rgb(208, 208, 208);
+    border-radius:5px;
+    align-items: center;
+    min-width: 750px;
+    
+}
+
+ul{
+    display:flex;
+    list-style:none;
+    gap:10px;
+    
+}
+
+
+.right{
+    display:flex;
+    align-items: center;
+    
+}
+
+
+ul li{
+    
+    padding: 8px 12px;
+    cursor:pointer;
+    
+    
+}
+
+
+
+.options li:hover{
+    background-color: rgb(221, 221, 221);
+    border-radius:3px;
+    
+}
+.right-options .download{
+    margin-left: 10vw;
+}
+.download{
+    background-color: rgb(255, 214, 79);
+    border-radius:5px;
+    padding:8px 20px;
+    cursor:pointer;
+}
+
+
+.download:hover
+{
+    background-color: rgb(222, 185, 66);
+   
+}
+
+
+.language:hover{
+    background-color: rgb(221, 221, 221);
+    border-radius:3px;
+   
+}
+
+.eng{
+     margin-left: 20px;
+}
+
+
+.search{
+    width:45px;
+    height:45px;
+    margin-left:10px;
+    background-image: url("./icons/search.png");
+    background-size: cover;
+    transform: scaleX(-1); 
+}
+
+.right-options li{
+    padding:6px 20px;
+}
+
+
+
+.download-files{
+    display:grid;
+    grid-template-columns: repeat(3,410px);
+    gap:25px 25px;
+    padding-top:150px;
+    place-content:center;
+    
+    
+}
+.lang a{
+    width:140px;
+    color:black;
+    text-decoration: none;
+}
+.lang{
+    display:flex;
+    flex-direction: column;
+
+    height:190px;
+    width:410px;
+    background-color: rgb(239, 236, 230);
+    border-radius:15px;
+    align-items:center;
+    justify-content: center;
+    
+
+}
+

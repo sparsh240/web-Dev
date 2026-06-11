@@ -1,0 +1,34 @@
+--- Notes CSS ---
+
+# L1 - CSS Transforms 
+Transforms make us feel like the elements are changing in 3 dimensions in 2d screen.
+2D transform - we can modify the object in x and y axis (translate , scale , rotate)
+3D transform - we can manipulate objects in 3 Dimensions
+
+transform:rotate(90deg/0.25turn) - will rotate our element by 90 degrees , 360 is 1 turn , 0.25 is 90
+          rotateX(--)  WILL ROTATE ABOUT X AXIS
+          rotateY(--)  WILL ROTATE ABOUT Y AXIS
+          rotateZ(--)  WILL ROTATE ABOUT Z AXIS
+transform:scale(1.5) - will scale the element 1.5 times 
+          scaleX ,scaleY ,scaleZ - Work for one dimension
+
+transform:skew(5deg); - like pulling its top left and bottom right ends to make its overall angles change 
+        skewY ALSO exists 
+        NOTE - WE CAN NOT SKEW IN Z DIRECTION
+
+transform:translate(34px/34%) - most used property , the element is moved in x direction 34 pixels / 34% of its width
+
+we can perform multiple transformations together on same element by seperating them with spaces
+
+Transforms can be used while creating nav bars if we want our nav bar to hide , expanding or contracting
+
+Transform Origin - About what point does the transform takes place , by deault , its -50% ,-50%  ie- geometric center point of the box.
+however , we can change it , 0% 0% will make the origin as top left corner , 100%,0% will make top right corner of the box as origin
+transform-origin : x% y%; - not used too often
+
+=========================================================================================================================================
+# L-2 - Practice - Continuation of 3intro2CSS/9practice
+
+          
+          
+          

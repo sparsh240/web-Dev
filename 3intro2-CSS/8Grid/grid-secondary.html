@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid - 2</title>
+    <style>
+        .container{
+            display:grid;
+            width:90vw;
+            grid-template-areas: "nav nav nav"
+                                 "side article article"
+                                 "footer footer footer";
+            border:2px solid rgb(3, 0, 0);
+
+            grid-template-columns: repeat(3, minmax(110px , 1fr));
+            gap:20px 50px;
+            
+        }
+        .boxes{
+            background-color: rgb(185, 246, 185);
+            border:2px solid rgb(3, 0, 0);
+            height:70px;
+        }
+        .box1{
+            grid-area:nav;
+        }
+        .box3{
+            grid-area: article;
+        }
+        .box5{
+            grid-area:footer
+        }
+        .box7{
+            grid-area: side;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="boxes box1">1 - nav</div>
+        <div class="boxes">2</div>
+        <div class="boxes box3">3 - Articles</div>
+        <div class="boxes">4</div>
+        <div class="boxes box5">5 - footer</div>
+        <div class="boxes">6</div>
+        <div class="boxes box7">7 - side</div>
+        <div class="boxes box-8">8</div>
+    </div>
+</body>
+</html>

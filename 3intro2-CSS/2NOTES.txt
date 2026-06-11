@@ -41,4 +41,76 @@ flex-shrink :2; is item property , will shrink the element twice the speed of no
 
 align-shelf: used to move a single element while keeping other elements as is .
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # L8 - CSS Grid
+
+display:grid; - keeps the container as is but we can explicitly define the number of rows and column we want
+
+grid-template-columns: [name1]100px [name2]300px; -> defines that the grid has 2 columns first 100px , second 300px, and the content aligns in direction of rows AND number of rows can increse as elements increase but columns remain same 
+
+([name1] and [name2] are optional , they are used to give names to the starting grid line of the row or column)
+
+eg - 
+1   2
+3   4
+5
+
+
+grid lines are seperations between the indevidual cells of the grid
+grid calls are individual sells inside a grid , a cell is like a box inside the grid
+grid track is the area between any 2 directly next to each other parellel grid lines
+grid area  is the area between any 4 grid lines
+
+we can give names to grid lines , and they can also be accessed via indexing 
+
+eg - box  box  box |  1 or -3
+     box  box  box |  2 or -2
+     box  box  box |  3 or -1
+     --------------
+      1    2    3
+      or   or   or
+     -3   -2    -1
+
+grid-row:start/end; ,grid-column:start/end; (where start and end are index values or name of the grid line we want to cover by that grid element's cell) - when we want to place an element at a certain place in the grid . (will push the elements to 
+place the element in their place and the whole orientation shifts accordingly) , to overlap , give the same grid-row/column to the element we want to overlap.
+
+rest of the cells shift logically.
+
+----        -------          --------        ------         --------         -------       ------      -------       ---------       --------       ------        --------        ----------       ---------     --------      ----------           --------  
+
+CSS Grid - 2 
+Instead of naming grid lines , we can name grid AREAS
+(in parent)
+
+grid-template-areas : "nav nav nav"  
+                      "side article article"
+                      "footer footer";  (assigns based on cells)
+
+(in the element)
+grid-area:nav; (will give all the nav area to the given element)
+
+in this we can overlap as well by giving the element the same grid-area
+
+
+-- fr Unit -- means Fraction
+used to depict the fraction of area we wish to dedecate to elements wrt the available width (in parent using grid-template-row/column)
+look at the code and contemplate the relation between areas and template comlumns in fr
+
+(the propertes below are applied inside the indevidual cells of the elements only)
+justify-items:center;  will set the elements to be at center of their respective cells (horizontally) - defined in container
+align-items:center; will set the elements to be at center of their respective cells (vertically) - defined in container
+item property - align-self:start/end/center; - will allign the desired element of the grid only.  - defined in element
+
+CSS repeat(num_repetitions , value to repeat) used when we have to repeat the values
+minmax(min_possible_value , max_possible_value) is defined such that one of the values is variable and other one acts as a bound
+
+
+WHOLE CONTAINER SPECIFIC PROPERTIES 
+in cases where the grid is smaller than the container itself , we  can align the whole grid with respect to the container with the following properties
+justify-content:center/end/start;  aligns the grid to the center horizontally
+align-content:center/end/start;  aligns the grid to the center vertically
+place-content:center; aligns the grid both horizontally and vertically.
+
+# L-9 - practice
+================================================================================================================================================================
