@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object fit and Position</title>
+    <style>
+        .container{
+            height: 400px;
+            width: 400px;
+            border: 2px solid black;
+            background-color: azure;
+        }
+
+        img{
+            
+            width:400px;
+            height:400px;
+            object-fit:cover;
+            object-position: left 30px;
+        }
+        .one{
+            
+            width:400px;
+            height:400px;
+            object-fit:contain;
+        }
+
+        .container1{
+            height: 400px;
+            width: 400px;
+            background-color: azure;
+            border: 2px solid black;
+            background-image: url("image/image.png");
+            background-repeat: no-repeat;
+            background-size: 300px 300px;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="./image/image.png">
+    </div>
+    <div class="container">
+        <img class="one" src="./image/image.png">
+    </div>
+    <div class="container1"></div>
+</body>
+</html>

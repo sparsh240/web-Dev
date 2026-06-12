@@ -1,0 +1,30 @@
+.container{
+    height: 40vh;
+    width: 60vw;
+    background-color: antiquewhite;
+    margin:10px;
+}
+.box{
+    height:50px;
+    width:100px;
+    background-color: aquamarine;
+    
+    
+}
+.b1{
+    transform:translateX(40vw) translateY(30vh) scale(2);
+        
+    background-color: rgb(20, 105, 105);
+    transition-property: transform ,background-color;
+    transition-timing-function: ease-in-out;
+    transition-delay: 2s;
+    transition-duration:3s;
+    
+   
+}
+.b2{
+    transform:translateX(40vw) translateY(30vh) scale(2);
+    transition: all 3s ease-in 2s; 
+    
+   
+}

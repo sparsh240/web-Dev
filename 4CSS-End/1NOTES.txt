@@ -1,6 +1,7 @@
 --- Notes CSS ---
 
 # L1 - CSS Transforms 
+
 Transforms make us feel like the elements are changing in 3 dimensions in 2d screen.
 2D transform - we can modify the object in x and y axis (translate , scale , rotate)
 3D transform - we can manipulate objects in 3 Dimensions
@@ -29,6 +30,132 @@ transform-origin : x% y%; - not used too often
 =========================================================================================================================================
 # L-2 - Practice - Continuation of 3intro2CSS/9practice
 
-          
+
+# L-3 - Transitions
+
+Transitions add smoothness to the page  when content moves 
+transitions are made of 4 properties :-
+
+transition-property -> which property do we want to transition(transform)
+transition-duration -> time it takes to complete the transition 
+transition-timing-function -> these determine the speed of transition across the time frame (linear/ease/ease-in/ease-out/ease-in-out/more) - go to inspect and check
+transition-delay -> delay after which the transition starts
+
+we can use a smaller version
+transition: all 2s ease-in 3s; (transition-property,transition-duration,transition-timing-function,transition-delay)
+
+# L-4 CSS Animations
+
+Animations are like transitions but are relatively more complex than Transitions and provide better control , needed
+in complex designs , used when more control works better or repetative code (one use case is physics simulations , maths is very relatable at times)
+
+(Transforms are often SUB PARTS OF ANIMATIONS)
+
+To make Animations in css we use 
+
+@keyframes name_of_animation{
+    from{
+       // properties before .. can be left empty if we want the element to have its initial visuals at start
+    }
+    to{
+       // properties after
+    }
+}
+
+element{
+        animation-name : name_of_animation;
+        animation-duration:3s; (whenenver the website reloads , the animation takes place and the object returns to its original position)
+        animation-iteration-count: - how many number of times does the animation repeat (can be set to infinite too)
+        animation-timing-function: - works same as transitions (can experiment and make in inspect mode and then copy in original code)
+        animation-direction : reverse/alternate; - reverse will reverse the direction , alternate will first perform the animation and then reverse it.
+        animation-play-state: paused/running; - usually we use js to do this but animation pauses exactly where the object was in motion when this property is detected.
+        animation-delay: 3s; makes sure the element retains its state deviod of any animation or properties before 3s
+}
+
+we can write  all of this in one line by :-
+        animation: name duration timing-function delay iteration-count direction fill-mode;
+        (smart enough to recognize even if we miss a property)
+we can make mutlipe animations on same object :-
+        animation: non comma seperated values for first animation , non comma seperated values for second animation;
+
+IF we want the element to retain the final properties at the end of the animation , we ser the fill-mode: forwards;
+IF we want the element to retain the "from" properties before animation-delay ends(animation starts) , we use fill-mode:backwards;
+
+NOTE - till now we can just perform one animation in a keyframe , however , we can perform different animations at different point of times in animations
+@keyframes name_o_anim{
+        0%{
+                ...properties
+        }
+
+        40%{
+                ...properties
+        }
+        90%{
+                ...properties
+        } 
+        // Means when 0% and after that 40% and then 90% animation is done , apply their respective properties
+}
+
+# L-5 Practice ball bouncing
+
+In Y direction simulate acceleration during gravity and in X direction simulate linear motion
+
+
+# L-6 Object fit , object position , background properties
+
+When we define the height and width of an image , it shrinks or stratches the main image itself , deforming its aspect ratio
+(the above is the default property - object-fit:fill)
+
+to keep this aspect ratio as is , we use :-
+
+        object-fit:cover;
+        so it does not look shrinked or strtched , the origional image is cut accordingly and then fit into the width and height
+
+        when the area is cut to fit , we can decide which part of the image we want to display by:-
+
+        object-position: top right; (without -) will display from the top right of the image
+        object-position:20px 40px; shifts the whole image in x and y axis inside the width and height of the image we set.
+
+to display the whole image and also preserve the aspect ratio :-
+
+        object-fit:contain; 
+        will not necessarily cover the whole width and height but will fit the whole image in it
+
+to scale down the image - object-fit:scale-down;
+
+
+WE CAN ALSO GIVE IMAGE AS A BACKGROUND OF A CONTAINER USING CSS
+IN CSS - background-image:url("url of the image");
+         background-position:center center; does the same as object position ,
+         in case of smaller image , this property aligns the image wrt container 
+         
+if we set a background image and its smaller than the container , then the image will repeat itself by default to fill the container
+        background-repeat:no-repeat/repeat-x/repeat-y
+
+background-clip:border-box/padding-box/content-box; -> the image is cut as soon as it reaches border or padding or margin (depending on what is used)
+
+
+# L-8 CSS Filters
+
+Filters help us edit the image , it allows us to apply filters like blur and brightnesses on image
+filter:blur(10px) -> blurs the image
+filter:brightness(150%) contrast(2) -> will change brightness to 150% and contrast to twice(and we can use % too)
+      :greyscale(40%) -> will greyscale the image
+      :sepia(100%) -> looks like old movies
+      :invert(1) -> will invert the image's colors
+      :opacity(0.5) -> sets opacity and also lets us see overlapping objects behind
+
+and more...
+
+# L-9 FIGMA
+
+HTML/CSS - part of development , Figma/photoshop - Part of design
+
+Idea -> Design -> Develop ...
+Figma helps us Collaborate and design , we can make icons , logos and everything .
+Has a community that shares designs .
+
+=============================================================================================================================================================
+
           
           

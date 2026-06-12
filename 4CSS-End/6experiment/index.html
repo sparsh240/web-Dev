@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying things</title>
+    <style>
+        .container{
+            
+            display:grid;
+            height:700px;
+            width:1200px;
+            background-color: rgb(156, 255, 156);
+            grid-template-columns: 1fr 1fr 1fr;
+            margin:auto;
+            gap:20px 20px;
+            border-radius: 10px;
+            align-items:center;
+            justify-items:center;
+            
+        }
+
+        .cards{
+            display:flex;
+            height:300px;
+            width:200px;
+            
+            border-radius: 10px;
+            background-color: rgb(158, 158, 255);
+            transition-property:transform;
+            transition-duration: 1s;
+            border:3px solid black;
+            outline:1px solid black;
+            outline-offset:-10px;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        .cards:hover{
+           
+            transform:  rotateX(40deg) rotateY(20deg) ;
+            
+        }
+
+        .diamond{
+            height:60px;
+            width:60px;
+            background-color: rgb(255, 206, 101);
+            transform:rotate(45deg) rotateY(0deg);
+            border:2px solid rgb(167, 132, 19);
+            outline:1px solid rgb(230, 182, 59);
+            outline-offset:-10px;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="cards c1">
+            <div class="diamond"></div>
+        </div>
+        <div class="cards c2">
+            <div class="diamond"></div>
+        </div>
+        <div class="cards c3">
+            <div class="diamond"></div>
+        </div>
+        <div class="cards c4">
+            <div class="diamond"></div>
+        </div>
+        <div class="cards c5">
+            <div class="diamond"></div>
+        </div>
+        <div class="cards c6">
+            <div class="diamond"></div>
+        </div>
+    </div>
+</body>
+</html>
