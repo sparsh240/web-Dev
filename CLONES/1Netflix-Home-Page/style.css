@@ -10,6 +10,15 @@
 }
 
 
+
+select option{
+    background-color: rgb(47, 47, 47);
+    color:white;
+    
+}
+
+
+
 body {
     background-color: black;
 }
@@ -108,14 +117,15 @@ nav {
     color: rgb(249, 249, 249);
     border: 1px solid rgb(135, 135, 135);
     border-radius: 4px;
-    padding: 3px 15px 0px 30px;
+    height:33px;
+    width:120px;
     font-weight: 600;
     appearance: none;
+    text-align: center;
     font-size: 16px;
-
-
-
+    box-sizing: border-box;
 }
+
 
 .sign-in {
     color: rgb(249, 249, 249);
