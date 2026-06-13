@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Martel Sans", sans-serif;
+    letter-spacing: -4%;
+    z-index: 1;  
+}
+
+
+body{
+    background-color: black;
+}
+.background{
+    position:absolute;
+    top:-12px;
+    left:auto;
+    right:auto;
+    z-index:-1 ;
+    height:110vh;
+    width:100vw;
+    object-fit: cover;
+    object-position: top center;
+    filter:brightness(35%);
+}
+.grad-bottom{
+    
+    position:absolute;
+    top:-12px;
+    left:auto;
+    right:auto;
+    z-index:0 ;
+    height:100vh;
+    width:100vw;
+    object-fit: cover;
+    object-position: top center;
+    height:110vh;
+    width:100vw;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
+}
+
+header{
+    width: 81vw;
+    margin:23px auto;
+    
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    
+    
+}
+
+.image{
+    height:40px;
+    width: 160px;
+    background-image: url("./assets/SVGs/logo.svg");
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.intro{
+    width:100%;
+    margin:auto 0px;
+    padding: 140px 0px 100px 0px;
+    box-sizing: border-box;
+    text-align: center;
+    color:rgb(255, 252, 252);
+    
+    
+}
+
+.heading{
+    position:relative;
+    font-size: 55px;
+    font-weight: 805;
+    line-height: 140%;
+    
+}
+
+pre{
+    height:184px;
+}
+
+.start-price{
+    font-size:20px;
+    font-weight:800;
+    margin-bottom:27px;
+    position:relative;
+}
+
+.direction-mail{
+    color:rgb(249, 249, 249);
+    font-weight: 600;
+    position:relative;
+}
+
+.lang{
+    background-color: rgba(0,0,0,0);
+    backdrop-filter: blur(3px);
+    color:rgb(249, 249, 249);
+    border:1px solid rgb(135, 135, 135);
+    border-radius: 4px;
+    padding:3px 15px 0px 30px;
+    font-weight: 600;
+    appearance: none;
+    font-size:16px;
+    
+
+    
+}
+
+.sign-in{
+    color:rgb(249, 249, 249);
+    background-color: red;
+    padding:4px 15px 1px 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size:15px;
+    margin:10px;
+    transition-duration: 0.15s;
+}
+.sign-in:hover{
+    background-color: rgb(210, 0, 0);
+    cursor: pointer;
+}
+
+.email{
+    position:relative;
+    margin:12px 8px;
+    height:54px;
+    width:370px;
+    background-color: rgba(17, 17, 17, 0.7);
+    border:1px solid rgb(104, 104, 104);
+    border-radius: 3px;
+    backdrop-filter: blur(1px);
+    padding-left:20px; 
+    
+}
+.email::placeholder{
+    
+    font-size:17px;   
+    color:rgb(188, 188, 188);
+    font-weight: 500;
+}
+
+.get-started-btn{
+    position:relative;
+    font-size: 22px;
+    padding:6px 40px 6px 30px;
+    border:none;
+    border-radius: 5px;
+    background-color: red;
+    color:rgb(246, 246, 246);
+    font-weight:800;
+    transition-duration: 0.15s;
+}
+
+.get-started-btn:hover{
+    background-color: rgb(210, 0, 0);
+    cursor: pointer;
+}
+
+.transition-container{
+    position: absolute;
+    height:200px;
+    width:100vw;
+    background:linear-gradient(rgb(22, 0, 38),rgba(0, 0, 0,1));
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    
+    border-top:4px solid rgb(162, 0, 0);
+    box-sizing: border-box;
+    top:96vh;
+    box-shadow: 0px 0px px red;
+
+}
+
+.mid{
+    height:auto;
+    margin-top: 10vw;
+}
+
+.films{
+    margin:20px 10vw;
+    display:flex;
+    padding: 0px 30px;
+    gap:47px;
+    overflow: auto;
+    scrollbar-width: none;
+    
+    
+}
+
+.film{
+    display: inline-block;
+    position: relative;
+    height:290px;
+    width:180px;
+    cursor:pointer;
+   
+}
+.film-img{
+    width:180px;
+    border-radius: 10px;
+
+}
+
+.mid-heads{
+    
+    margin-left: 10vw;
+    position: relative;
+    color:white;
+}
+
+.num{
+   
+    position: absolute;
+    bottom:0px;
+    left:-30px;
+    font-size: 90px;
+    text-shadow: 0px 0px 5px   white;
+    font-weight: 1000;
+    
+}
+
+.reasons{
+    width:90vw;
+    display:flex;
+    gap:10px;
+    flex-wrap: wrap;
+    margin:30px auto 70px auto ;
+    justify-content: center;
+    
+}
+
+.reason{
+    position:relative;
+    height:280px;
+    width: 300px; 
+    background: linear-gradient(rgba(39, 24, 73.1),rgba(57, 33, 66,0.5));
+    border-radius: 18px;
+    
+} 
+
+.reason-head{
+    color:rgb(242, 239, 245);
+    margin:15px auto 10px 14px;
+}
+
+.reason-info{
+    color:rgb(189, 184, 192);
+    font-weight: 600;
+    margin:auto 15px;;
+}
+
+.reason-logo{
+    position:absolute;
+    bottom:15px;
+    right:15px;
+    
+}
+
+.faqs{
+    display: flex;
+    flex-direction: column;
+    color:white;
+    
+    width: 80vw;
+    gap: 10px;
+    margin:auto;
+    
+}
+
+.faq{
+    display: flex;
+    background-color: rgb(41, 41, 41);
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    height:80px;
+    padding:0px 20px;
+    transition-duration: 0.2s;
+    cursor:pointer;
+}
+
+.faq:hover{
+    background-color: rgb(57, 57, 57);
+    
+}
+
+.faq h2{
+    font-weight: 500;
+    height:auto;
+    
+}
+
+.faq h1{
+    font-size: 50px;
+    font-weight: 100;
+    transition-duration: 0.2s;
+}
+
+.faq h1:active{
+    transform:rotate(-45deg); 
+}
+
+.bottom{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mail-bottom{
+    width:550px
+}
+footer{
+    color:rgb(176, 176, 176);
+    font-weight: 600;
+    width:90vw;
+    margin:80px 10vw;
+}
+
+.questions{
+    text-decoration: underline;
+    cursor:pointer;
+    
+}
+
+.links{
+    display:grid;
+    margin:40px auto 60px 0px;
+    width:80vw;
+    grid-template-columns: repeat(4,1fr);
+    font-weight: 500;
+}
+
+.netflix-india{
+    font-size: 14px;
+    font-weight: 600;
+    margin:30px 0px;
+}
+
+.google-captcha-info{
+    color:rgb(139, 139, 139);
+    font-weight: normal;
+    font-size:13px;
+}

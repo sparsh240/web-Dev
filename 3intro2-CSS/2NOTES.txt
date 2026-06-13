@@ -39,7 +39,9 @@ flex-grow : 1; if difined in a single class of multiple elements , all of them w
 
 flex-shrink :2; is item property , will shrink the element twice the speed of normal element when needed (window size change nd all) 
 
-align-shelf: used to move a single element while keeping other elements as is .
+align-self: used to move a single element while keeping other elements as is .
+
+flex-basis: sets the initial, default size of a flex item before the remaining space in the container is distributed
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

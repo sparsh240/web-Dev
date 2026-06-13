@@ -154,8 +154,12 @@ HTML/CSS - part of development , Figma/photoshop - Part of design
 Idea -> Design -> Develop ...
 Figma helps us Collaborate and design , we can make icons , logos and everything .
 Has a community that shares designs .
-
+we can take inspirations from community prototypes , icons
 =============================================================================================================================================================
+
+Extra - 
+z-index property in CSS controls the vertical stacking order of elements that overlap on a web page
+-1 means go below , 1 means come above
 
           
           
